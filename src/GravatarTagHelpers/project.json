@@ -3,7 +3,7 @@
 
   "title": "GravatarTagHelpers",
 
-  "description": "A Simple tag helper to display the Gravatar image using email address.",
+  "description": "A simple tag helper to display the Gravatar image using email address.",
 
   "authors": [ "Manoj Kulkarni" ],
 

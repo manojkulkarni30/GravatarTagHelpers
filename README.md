@@ -1,5 +1,5 @@
 # GravatarTagHelpers
-Simple tag helper to display the Gravatar image using email address.
+A simple tag helper to display the Gravatar image using email address.
 
 ## Setup
 To use this tag helper, add the following line in ```_ViewImports.cshtml```.
