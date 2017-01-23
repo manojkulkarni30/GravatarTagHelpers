@@ -54,7 +54,7 @@ namespace GravatarTagHelpers
         {
             output.TagName = "img";
 
-            output.TagMode = TagMode.StartTagAndEndTag;
+            output.TagMode = TagMode.SelfClosing;
 
             var gravatarImageUrl = Gravatar
                 .GetGravatarImageUrl(email: Email,
