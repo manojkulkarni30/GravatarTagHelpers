@@ -1,5 +1,25 @@
 ﻿{
-  "version": "1.0.0-*",
+  "version": "1.0.0-rc-*",
+
+  "title": "GravatarTagHelpers",
+
+  "description": "A Simple tag helper to display the Gravatar image using email address.",
+
+  "authors": [ "Manoj Kulkarni" ],
+
+  "copyright": "Copyright © Manoj Kulkarni 2017",
+
+  "packOptions": {
+    "projectUrl": "https://github.com/manojkulkarni30/GravatarTagHelpers",
+    "tags": [ "gravatar, tag helper" ],
+    "releaseNotes": "Initial Version",
+    "licenseUrl": "https://github.com/manojkulkarni30/GravatarTagHelpers/blob/master/License.txt",
+    "owners": [ "Manoj Kulkarni" ],
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/manojkulkarni30/GravatarTagHelpers"
+    }
+  },
 
   "dependencies": {
     "Microsoft.AspNetCore.Mvc": "1.0.0",
