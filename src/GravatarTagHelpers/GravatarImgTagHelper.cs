@@ -50,6 +50,11 @@ namespace GravatarTagHelpers
         /// </summary>
         public bool UseSecureUrl { get; set; }
 
+        /// <summary>
+        /// Alt tag for an image
+        /// </summary>
+        public string Alt { get; set; }
+
         public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "img";
@@ -67,6 +72,9 @@ namespace GravatarTagHelpers
                 useSecureUrl: UseSecureUrl);
 
             output.Attributes.Add("src", gravatarImageUrl);
+
+            if(!string.IsNullOrWhiteSpace(Alt))
+                output.Attributes.Add("alt", Alt);
 
             return base.ProcessAsync(context, output);
         }
