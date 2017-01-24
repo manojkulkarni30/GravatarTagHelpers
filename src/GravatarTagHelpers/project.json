@@ -11,7 +11,7 @@
 
   "packOptions": {
     "projectUrl": "https://github.com/manojkulkarni30/GravatarTagHelpers",
-    "tags": [ "gravatar, tag helper" ],
+    "tags": [ "Gravatar, Tag Helper", "AspNetCore","Mvc","Core" ],
     "releaseNotes": "Initial Version",
     "licenseUrl": "https://github.com/manojkulkarni30/GravatarTagHelpers/blob/master/License.txt",
     "owners": [ "Manoj Kulkarni" ],
@@ -27,6 +27,8 @@
   },
 
   "frameworks": {
+    "net451": {},
+
     "netstandard1.6": {
       "imports": "dnxcore50"
     }

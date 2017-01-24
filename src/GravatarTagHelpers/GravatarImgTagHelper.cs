@@ -55,6 +55,16 @@ namespace GravatarTagHelpers
         /// </summary>
         public string Alt { get; set; }
 
+        /// <summary>
+        /// CSS class
+        /// </summary>
+        public string Class { get; set; }
+
+        /// <summary>
+        /// Id attribute for an image
+        /// </summary>
+        public string Id { get; set; }
+
         public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "img";
@@ -73,8 +83,17 @@ namespace GravatarTagHelpers
 
             output.Attributes.Add("src", gravatarImageUrl);
 
+            // Add alt tag
             if(!string.IsNullOrWhiteSpace(Alt))
                 output.Attributes.Add("alt", Alt);
+
+            // Add CSS class
+            if (!string.IsNullOrWhiteSpace(Class))
+                output.Attributes.Add("class", Class);
+
+            // Add id attribute
+            if (!string.IsNullOrWhiteSpace(Id))
+                output.Attributes.Add("id", Id);
 
             return base.ProcessAsync(context, output);
         }
