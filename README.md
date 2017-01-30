@@ -2,7 +2,9 @@
 A simple tag helper to display the Gravatar image using email address.
 
 ## Setup
-To use this tag helper, add the following line in ```_ViewImports.cshtml```.
+This tag helper is available on NuGet https://www.nuget.org/packages/GravatarTagHelpers/
+
+After installation of nuget package, add the following line in ```_ViewImports.cshtml```.
 ```html
 @addTagHelper *, GravatarTagHelpers
 ```
