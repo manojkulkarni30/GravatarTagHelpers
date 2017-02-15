@@ -2,33 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="jumbotron text-center">
-    <h1>Gravatar Tag Helpers</h1>
-</div>
-
-<div class="container body-content">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title">Available on NuGet</h3>
-        </div>
-        <div class="panel-body">
-            <pre><code class="html">PM&gt; Install-Package GravatarTagHelpers</code></pre>
-        </div>
+<cache expires-on="@DateTime.Now.AddMonths(6)" priority="@Microsoft.Extensions.Caching.Memory.CacheItemPriority.Normal">
+    <div class="jumbotron text-center">
+        <h1>Gravatar Tag Helpers</h1>
     </div>
 
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title">Gravatar Image Tag Helper</h3>
+    <div class="container body-content">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Available on NuGet</h3>
+            </div>
+            <div class="panel-body">
+                <pre><code class="html">PM&gt; Install-Package GravatarTagHelpers</code></pre>
+            </div>
         </div>
-        <div class="panel-body">
-            <h4>Code:</h4>
-            <pre><code class="html">&lt;gravatar-img email=&quot;example@test.com&quot; size=&quot;100&quot;&gt;&lt;/gravatar-img&gt;</code></pre>
-            <h4>Output:</h4>
-            <div class="output">
-                <gravatar-img email="example@test.com" size="100"></gravatar-img>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Gravatar Image Tag Helper</h3>
+            </div>
+            <div class="panel-body">
+                <h4>Code:</h4>
+                <pre><code class="html">&lt;gravatar-img email=&quot;example@test.com&quot; size=&quot;100&quot;&gt;&lt;/gravatar-img&gt;</code></pre>
+                <h4>Output:</h4>
+                <div class="output">
+                    <gravatar-img email="example@test.com" size="100"></gravatar-img>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</cache>
 
 
